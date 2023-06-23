@@ -1,0 +1,303 @@
+<?php
+
+if(isset($_POST['submit']))
+{
+print_r($_POST['nome']);
+print_r($_POST['email']);
+print_r($_POST['telefone']);
+print_r($_POST['genero']);
+}
+
+?>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Auto S Cristóvão</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicon -->
+        <link href="img/logo.png" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+                <link rel="stylesheet" href="marcar/style.css">
+
+        <!-- CSS Libraries -->
+        <link rel="stylesheet" href="marcar/style.css">
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+     
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="logo">
+                            <a href="index.php">
+
+                              
+                                <h1>
+                                    Auto S.
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cristovao</span>
+                                </h1>
+                              
+                                <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                            </a>
+                        </div>
+                    </div>
+                     <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    .total {
+      font-weight: bold;
+    }
+  </style>
+  
+                    <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="far fa-clock"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Aberto</h3>
+                                        <p><p></p> 9:00 - 12:30 <p></p>2:00 - 18:30</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="fa fa-phone-alt"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Contato</h3>
+                                        231 422 566
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Email</h3>
+                                        <p>correiapedro301@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.php" class="nav-item nav-link active">Home</a>
+                            <a href="sobre.php" class="nav-item nav-link">Sobre</a>
+                            <a href="service.php" class="nav-item nav-link">Serviços</a>
+                            <a href="location.php" class="nav-item nav-link">Localizaçao</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Itens</a>
+                                <div class="dropdown-menu">
+                                    <a href="Oleo.php" class="dropdown-item">Oleo</a>
+                                    <a href="pneus.php" class="dropdown-item">Pneus</a>
+                                    <a href="Lampadas.php" class="dropdown-item">Lampadas</a>
+                                </div>
+                            </div>
+                            <a href="contact.php" class="nav-item nav-link">Contato</a>
+                        </div>
+                        <div class="ml-auto">
+                            <a class="btn btn-custom" href="Marcações.php">Marcações</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <br>
+         <br>
+        <center>
+        <p>
+<div class="login-box">
+        <form action="cadastro.php" method="Post">
+            <fieldset>
+                <br><br>
+                <legend><b>Marcações</b></legend>
+              
+                <center>     <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome</label>
+                </div>
+</center>
+                <br>
+                <center>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+</center>
+                <br>
+                <center>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div>
+</center>
+                <p>Lavagens:</p>
+                <center>
+                <input type="radio" id="lavagem" name="lavagens" value="Lavagem Auto" required>
+                <label for="lavagem">Lavagem Auto</label>
+</center>
+                <br>
+                <input type="radio" id="lavagem1" name="lavagens" value="Lubrificação Geral" required>
+                <label for="lavagem1">Lubrificação Geral</label>
+                <br>
+                <input type="radio" id="Pneus" name="lavagens" value="Pneus" required>
+                <label for="Pneus">Pneus</label>
+                <br>
+                <input type="radio" id="outro" name="lavagens" value="outro" required>
+                <label for="outro">Outro</label>
+                <br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+    <div class="footer">
+            <div class="container">
+                <div class="row">
+				
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-contact">
+                            <h2>Encontre-nos em</h2>
+                            <p><i class="fa fa-map-marker-alt"></i>Rua dos Namorados, n7</p>
+                            <p><i class="fa fa-phone-alt"></i>938582026</p>
+                            <p><i class="fa fa-envelope"></i>correiapedro301@gmail.com</p>
+                            <div class="footer-social">
+                                <a class="btn" href="https://www.facebook.com/autoscristovao/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+					
+					 <div class="col-lg-3 col-md-6">
+                        <div class="footer-link">
+                            <h2> </h2>
+                            <a=""> </a>
+                            
+                        </div>
+                    </div>
+					
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-link">
+                            <h2>Links</h2>
+                            <a href="">Sobre nós</a>
+                            <a href="">Contactenos</a>
+                            <a href="">Nossos serviços</a>
+                            <a href="">Localizaçao</a>
+                        </div>
+						
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-link">
+                            <h2> <br></h2>
+                            <a href="">Termos de uso</a>
+                            <a href="">Política de Privacidade</a>
+                            <a href="">Cookies</a>
+                            <a href="">Ajuda</a>
+                        </div>
+                    </div>
+					
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-newsletter">
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright">
+                <p>&copy; <a href="#">Auto S. Cristovao</a>, Todos os direitos reservados.</a></p>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Back to top button -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
